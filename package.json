@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/jayladenae/10-homework#readme",
   "dependencies": {
+    "bootstrap-icons": "^1.6.0",
     "inquirer": "^8.2.0"
   },
   "devDependencies": {

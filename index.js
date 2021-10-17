@@ -173,7 +173,9 @@ function addIntern () {
 
 function finishTeam() {
     console.log("we're Finished!")
+    for (let people of teamMembers) {
+        let role = people.getRole()
+    }
 }
-
 
 init();
