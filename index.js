@@ -237,10 +237,10 @@ My Team
 <div id="team-cards" class="container d-flex flex-wrap justify-content-center align-items-center">
     `
     for(let employee of htmlArray) {
-        if (employee.extraName === "Github:") {
-             extraStuff = `<a href="https://github.com/${employee.extra}>"`
+        if (employee.role === "Engineer") {
+             employee.extra = `<a href="https://github.com/${employee.extra}" target="_blank"> ${employee.extra}</a>`
         } else {
-             extraStuff = employee.extra;
+             employee.extra = employee.extra;
         }
         htmlString = htmlString.concat(
             `<div id="card" class="card" style="width: 17.75rem;">
@@ -253,7 +253,7 @@ My Team
             <div class="card" style="width: 15rem;">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">ID:${employee.id}</li>
-                  <li class="list-group-item">Email:${employee.email}</li>
+                  <li class="list-group-item">Email: <a href ="mailto:${employee.email}"> ${employee.email}</a></li>
                   <li class="list-group-item">${employee.extraName} ${employee.extra}</li>
                 </ul>
               </div>
