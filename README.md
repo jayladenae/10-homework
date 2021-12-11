@@ -4,31 +4,38 @@
 
 This is a  a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.
 
-### Usage
+### User Story
 
-1. Right click index.js and open the Integrated Terminal.
-
-2. On the command line run the code `node index.js`
-
-3. You will then be prompted with a series of questions about your team!
-
-4. Once you are done answering your questions you will see a message that states    "Congratulations, you have successfully created a webpage for your team!". Once you see this message you can look to the left and see a new theTeam.html was created.
-
-5. You can now open your theTeam.html in your browser and see a summary for each employee on your team!
+```md
+GIVEN a command-line application that accepts user input
+WHEN I am prompted for my team members and their information
+THEN an HTML file is generated that displays a nicely formatted team roster based on user input
+WHEN I click on an email address in the HTML
+THEN my default email program opens and populates the TO field of the email with the address
+WHEN I click on the GitHub username
+THEN that GitHub profile opens in a new tab
+WHEN I start the application
+THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
+WHEN I enter the team manager’s name, employee ID, email address, and office number
+THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
+WHEN I select the engineer option
+THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
+WHEN I select the intern option
+THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
+WHEN I decide to finish building my team
+THEN I exit the application, and the HTML is generated
+```
+#### Generated HTML
+![Screenshot of generated HTML file](screenshot.png)
 
 ### Credits
 - Inquirer Package
 - Ismeny Saguillan
 - Damien Luzzo 
 
-### License 
-![MIT License](https://img.shields.io/apm/l/PACK?style=plastic)
-
-### Screenshot of generated HTML.
-
-![Screenshot of generated HTML file](screenshot.png)
-
-#### Video
 [Video of me using the application](https://drive.google.com/file/d/122-8DotHtQlVLSUF79NtAh-kCgCU-aZS/view)
 
-[Video of me running the tests](https://drive.google.com/file/d/1TNwsxjoxosEwIHUIirawACLsB9-rBb9F/view)
+[Video of all tests passed](https://drive.google.com/file/d/1TNwsxjoxosEwIHUIirawACLsB9-rBb9F/view)
+
+### License 
+![MIT License](https://img.shields.io/apm/l/PACK?style=plastic)
